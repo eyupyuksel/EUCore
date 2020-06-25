@@ -4,4 +4,27 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+    <Folder Include="Entity\" />
+    <Folder Include="Repositories\Dapper\" />
+    <Folder Include="Audit\" />
+    <Folder Include="Services\" />
+    <Folder Include="Extension\" />
+    <Folder Include="Repositories\Extensions\" />
+    <Folder Include="Serialization\" />
+    <Folder Include="UnitofWorks\" />
+    <Folder Include="Configuration\" />
+    <Folder Include="Repositories\Dapper\Dommel\" />
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2020.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Dapper" Version="1.50.5" />
+    <PackageReference Include="Dapper.SqlBuilder" Version="1.50.5" />
+    <PackageReference Include="DapperExtensions.DotnetCore" Version="1.0.1" />
+    <PackageReference Include="Dommel" Version="2.0.0-beta4" />
+    <PackageReference Include="Autofac" Version="4.8.1" />
+  </ItemGroup>
 </Project>
