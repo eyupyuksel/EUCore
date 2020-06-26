@@ -17,7 +17,7 @@ namespace EUCore.Repositories.Extensions
                     return filter;
                 return predicate.And(filter);
             }
-            return predicate;
+            return predicate ?? (x => true);
         }
 
         public static Expression<Func<TEntity, bool>> And<TEntity, TProperty>(

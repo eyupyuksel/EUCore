@@ -1,5 +1,7 @@
 # EUCore
-General
-Test
-sadas
-cxcfd
+
+General Backend Architecture
+
+-> Net core 3.1
+-> MongoDb Driver
+-> Dapper

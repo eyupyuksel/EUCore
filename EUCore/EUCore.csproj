@@ -2,6 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>EUCore</PackageId>
+    <Authors>Eyüp Yüksel</Authors>
+    <NeutralLanguage>tr</NeutralLanguage>
+    <Owners>Eyüp Yüksel</Owners>
+    <Title>EUCore</Title>
+    <PackOnBuild>true</PackOnBuild>
+    <VersionPrefix>1.0.0</VersionPrefix>
+  	<VersionSuffix>alpha</VersionSuffix>
+  	<Version>1.0.0-alpha</Version>
+  	<PackageVersion>1.0.1</PackageVersion>
+  	<Copyright>Copyright ® 2020</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/restsharp/RestSharp.git</RepositoryUrl> 
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,5 +41,7 @@
     <PackageReference Include="DapperExtensions.DotnetCore" Version="1.0.1" />
     <PackageReference Include="Dommel" Version="2.0.0-beta4" />
     <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.10.4" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.10.4" />
   </ItemGroup>
 </Project>
