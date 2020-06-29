@@ -8,7 +8,7 @@ namespace EUCore.Repositories.Dapper.Dommel
     {
         public string ResolveColumnName(PropertyInfo propertyInfo)
         {
-            return $"[{propertyInfo.Name}]";
+            return $"{propertyInfo.Name}";
         }
     }
 }
