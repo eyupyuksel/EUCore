@@ -7,7 +7,7 @@ namespace EUCore.Repositories.Dapper.Dommel
     {
         public string ResolveTableName(Type type)
         {
-            return $"[{type.Name.Replace("Entity", string.Empty)}]";
+            return $"{type.Name.Replace("Entity", string.Empty)}";
         }
     }
 }
