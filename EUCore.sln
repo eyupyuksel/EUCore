@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EUCore", "EUCore\EUCore.csproj", "{BF1DE057-30CD-41D4-90B5-0B309FB98584}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EUCore.Extensions", "EUCore.Extensions\EUCore.Extensions.csproj", "{EE9DCA48-8056-4E16-BAFC-A77C3D913E4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{BF1DE057-30CD-41D4-90B5-0B309FB98584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF1DE057-30CD-41D4-90B5-0B309FB98584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF1DE057-30CD-41D4-90B5-0B309FB98584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE9DCA48-8056-4E16-BAFC-A77C3D913E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE9DCA48-8056-4E16-BAFC-A77C3D913E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE9DCA48-8056-4E16-BAFC-A77C3D913E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE9DCA48-8056-4E16-BAFC-A77C3D913E4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
