@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using EUCore.Entity;
 using EUCore.Entity.Auditing;
-using EUCore.Extension;
+using EUCore.Extensions;
 namespace EUCore.Repositories.Extensions
 {
     public static class RepositoryExtensions

@@ -11,10 +11,10 @@
     <VersionPrefix>1.0.0</VersionPrefix>
   	<VersionSuffix>alpha</VersionSuffix>
   	<Version>1.0.0-alpha</Version>
-  	<PackageVersion>1.0.2</PackageVersion>
+  	<PackageVersion>1.0.4</PackageVersion>
   	<Copyright>Copyright ® 2020</Copyright>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/restsharp/RestSharp.git</RepositoryUrl> 
+    <RepositoryUrl>https://github.com/eyupyuksel/EUCore.git</RepositoryUrl> 
     <RepositoryType>git</RepositoryType>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
   </PropertyGroup>
