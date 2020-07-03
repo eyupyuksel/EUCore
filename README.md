@@ -24,6 +24,7 @@ General Backend Architecture
         "ConnectionString": "CONNECTION_STRING"
     }
     ```
+
 3. Define Entity
 
     ```
@@ -34,6 +35,7 @@ General Backend Architecture
     ```    
 
 4. Start using
+
   ```
   private IRepository<UserEntity> _userRepository;
   public WeatherForecastController(IRepository<UserEntity> userRepository)
