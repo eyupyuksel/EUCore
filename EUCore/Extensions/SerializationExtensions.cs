@@ -2,7 +2,7 @@
 using EUCore.Serialization;
 using Newtonsoft.Json;
 
-namespace EUCore.Extension
+namespace EUCore.Extensions
 {
     public static class SerializationExtensions
     {

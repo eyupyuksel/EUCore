@@ -25,7 +25,7 @@
     <Folder Include="Repositories\Dapper\" />
     <Folder Include="Audit\" />
     <Folder Include="Services\" />
-    <Folder Include="Extension\" />
+    <Folder Include="Extensions\" />
     <Folder Include="Repositories\Extensions\" />
     <Folder Include="Serialization\" />
     <Folder Include="UnitofWorks\" />

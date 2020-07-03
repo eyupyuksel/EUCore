@@ -1,7 +1,7 @@
 ﻿using EUCore.Entity;
 
 
-namespace EUCore.Extension
+namespace EUCore.Extensions
 {
     public static class ValidationExtensions
     {
