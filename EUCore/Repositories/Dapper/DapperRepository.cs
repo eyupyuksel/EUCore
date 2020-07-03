@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using EUCore.Audit;
 using EUCore.UnitofWorks;
 using EUCore.Repositories.Extensions;
-using EUCore.Extension;
+using EUCore.Extensions;
 
 namespace EUCore.Repositories.Dapper
 {

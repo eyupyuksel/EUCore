@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using EUCore.Audit;
 using EUCore.Configuration;
 using EUCore.Entity;
-using EUCore.Extension;
+using EUCore.Extensions;
 using EUCore.Repositories.Dapper;
 using EUCore.Repositories.Extensions;
 using MongoDB.Driver;

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EUCore.Extension
+namespace EUCore.Extensions
 {
     public static class EnumExtensions
     {
@@ -16,5 +16,10 @@ namespace EUCore.Extension
             Type u = Nullable.GetUnderlyingType(t);
             return u != null && u.IsEnum;
         }
+    }
+
+    public enum UserType
+    {
+        
     }
 }
