@@ -70,6 +70,6 @@ General Backend Architecture
         .DefaultMapper(typeof(DefaultEntityMapper<>))
         .SetDialect<MySqlDialect>()//SqlServerDialect or MySqlDialect
     ).AutoActivate().AsSelf().SingleInstance();
-    ```` 
+    ``` 
      
     
