@@ -26,7 +26,7 @@ General Backend Architecture
     ```
 3. Define Entity
     ```
-    public class UserEntity : **EntityBase<int>**
+    public class UserEntity : EntityBase<int>
     {
         public string Username { get; set; }
     }
