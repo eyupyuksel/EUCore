@@ -49,6 +49,7 @@ General Backend Architecture
   ```
     
 5.UnitOfWork
+
    ``` 
    public class UnitOfWorkManager : UnitofWorkManagerBase
    {
@@ -65,6 +66,7 @@ General Backend Architecture
    ```
    
 6.Dependecy
+
     ```
     builder.RegisterModule(new EUCoreModule(appSettings));
     builder.RegisterType<UnitOfWorkManager>().As<IUnitOfWorkManager>().As<IRepositoryManager>().InstancePerLifetimeScope();
