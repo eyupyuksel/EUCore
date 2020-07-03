@@ -37,7 +37,7 @@ namespace EUCore.Repositories
         [NotNull]
         Task<TPrimaryKey> InsertAndGetIdAsync([NotNull] TEntity entity);
         [NotNull]
-        Task UpdateAsync([NotNull] TEntity entity);
+        Task<bool> UpdateAsync([NotNull] TEntity entity);
         void Delete([NotNull] Expression<Func<TEntity, bool>> predicate, bool force = false);
         [NotNull]
         Task DeleteAsync([NotNull] TEntity entity, bool force = false);
@@ -49,7 +49,7 @@ namespace EUCore.Repositories
         [NotNull]
         TEntity Get([NotNull] TPrimaryKey id);
         void Insert([NotNull] TEntity entity);
-        void Update([NotNull] TEntity entity);
+        bool Update([NotNull] TEntity entity);
         void Delete([NotNull] TEntity entity, bool force = false);
     }
     public interface IGetRepository<TEntity, in TPrimaryKey> : IRepository where TEntity : class, IEntity<TPrimaryKey>, new()
