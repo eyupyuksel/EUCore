@@ -36,36 +36,36 @@ General Backend Architecture
 
 4. Start using
 
-  ```
-  private IRepository<UserEntity> _userRepository;
-  public WeatherForecastController(IRepository<UserEntity> userRepository)
-  {
-      _userRepository = userRepository;
-  }
+    ```
+    private IRepository<UserEntity> _userRepository;
+    public WeatherForecastController(IRepository<UserEntity> userRepository)
+    {
+        _userRepository = userRepository;
+    }
 
-  [HttpGet]
-  public IEnumerable<UserEntity> Get()
-  {
-      return _userRepository.GetAll();
-  }
-  ```
+    [HttpGet]
+    public IEnumerable<UserEntity> Get()
+    {
+        return _userRepository.GetAll();
+    }
+    ```
     
 5.UnitOfWork
 
-   ``` 
-   public class UnitOfWorkManager : UnitofWorkManagerBase
-   {
+    ``` 
+     public class UnitOfWorkManager : UnitofWorkManagerBase
+     {
 
-        public UnitOfWorkManager(IComponentContext context,AppSettings appSettings) : base(appSettings,context)
-        {
-        }
-        protected override DbConnection CreateConnection()
-        {
-            return new SqlConnection();
-        }
+          public UnitOfWorkManager(IComponentContext context,AppSettings appSettings) : base(appSettings,context)
+          {
+          }
+          protected override DbConnection CreateConnection()
+          {
+              return new SqlConnection();
+          }
 
-   }
-   ```
+     }
+     ```     
    
 6.Dependecy
 
