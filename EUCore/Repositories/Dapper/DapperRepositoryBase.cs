@@ -31,8 +31,8 @@ namespace EUCore.Repositories.Dapper
         public virtual IEnumerable<TEntity> GetAllPaged(int pageNumber = 0, int itemsPerPage = 10) => GetPaged(null, pageNumber, itemsPerPage);
         public abstract IEnumerable<TEntity> GetPaged(Expression<Func<TEntity, bool>> predicate, int pageNumber, int pageSize);
 
-        public abstract void Update(TEntity entity);
-        public virtual Task UpdateAsync(TEntity entity) => Task.Run(() => Update(entity));
+        public abstract bool Update(TEntity entity);
+        public virtual Task<bool> UpdateAsync(TEntity entity) => Task.Run(() => Update(entity));
 
         public abstract void Delete(TEntity entity, bool force = false);
 

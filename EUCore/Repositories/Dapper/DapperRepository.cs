@@ -80,10 +80,10 @@ namespace EUCore.Repositories.Dapper
             return Connection.SelectPaged(predicate.AndDeleteFilter(), pageNumber, pageSize, Transaction);
         }
         public override void Insert(TEntity entity) => InsertAndGetId(entity);
-        public override void Update(TEntity entity)
+        public override bool Update(TEntity entity)
         {
             OnUpdate(entity);
-            Connection.Update(entity, Transaction);
+            return Connection.Update(entity, Transaction);
         }
         public override void Delete(TEntity entity, bool force = false)
         {

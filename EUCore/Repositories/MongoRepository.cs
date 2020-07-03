@@ -141,10 +141,11 @@ namespace EUCore.Repositories
             return mongoCollection.Find(predicate.AndDeleteFilter()).Single();
         }
 
-        public override void Update(TEntity entity)
+        public override bool Update(TEntity entity)
         {
             OnUpdate(entity);
-            mongoCollection.ReplaceOne(m => m.Id.Equals((TPrimaryKey)entity.GetPrimaryKey()), entity);
+            var test = mongoCollection.ReplaceOne(m => m.Id.Equals((TPrimaryKey)entity.GetPrimaryKey()), entity);
+            return test.ModifiedCount > 0;
         }
     }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq.Expressions;
 
-namespace EUCore.Extension
+namespace EUCore.Extensions
 {
     [SuppressMessage("ReSharper", "AssignNullToNotNullAttribute")]
     public static class LamdaExpressions

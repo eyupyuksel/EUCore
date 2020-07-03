@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace EUCore.Extension
+namespace EUCore.Extensions
 {
     public static class HashExtensions
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace EUCore.Extension
+namespace EUCore.Extensions
 {
     public static class DictionaryUtility
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Dapper;
 
-namespace EUCore.Extension
+namespace EUCore.Extensions
 {
     public static class SqlBuilderExtensions
     {
