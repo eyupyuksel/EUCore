@@ -52,28 +52,28 @@ General Backend Architecture
     
 5.UnitOfWork
 
-    ``` 
-     public class UnitOfWorkManager : UnitofWorkManagerBase
-     {
-
-          public UnitOfWorkManager(IComponentContext context,AppSettings appSettings) : base(appSettings,context)
-          {
-          }
-          protected override DbConnection CreateConnection()
-          {
-              return new SqlConnection();
-          }
-
-     }
+     ``` 
+      public class UnitOfWorkManager : UnitofWorkManagerBase
+      {
+ 
+           public UnitOfWorkManager(IComponentContext context,AppSettings appSettings) : base(appSettings,context)
+           {
+           }
+           protected override DbConnection CreateConnection()
+           {
+               return new SqlConnection();
+           }
+ 
+      }
      ```     
    
 6.Dependecy
 
-    ```
-    builder.RegisterModule(new EUCoreModule(appSettings));
-    builder.RegisterType<UnitOfWorkManager>().As<IUnitOfWorkManager>().As<IRepositoryManager>().InstancePerLifetimeScope();
-    builder.Register(c => new RuntimeInitializer()
-        .DefaultMapper(typeof(DefaultEntityMapper<>))
-        .SetDialect<MySqlDialect>()//SqlServerDialect or MySqlDialect
-    ).AutoActivate().AsSelf().SingleInstance();
-    ```
+     ```
+     builder.RegisterModule(new EUCoreModule(appSettings));
+     builder.RegisterType<UnitOfWorkManager>().As<IUnitOfWorkManager>().As<IRepositoryManager>().InstancePerLifetimeScope();
+     builder.Register(c => new RuntimeInitializer()
+         .DefaultMapper(typeof(DefaultEntityMapper<>))
+         .SetDialect<MySqlDialect>()//SqlServerDialect or MySqlDialect
+     ).AutoActivate().AsSelf().SingleInstance();
+     ```
