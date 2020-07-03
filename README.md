@@ -25,6 +25,7 @@ General Backend Architecture
     }
     ```
 3. Define Entity
+
     ```
     public class UserEntity : EntityBase<int>
     {
@@ -33,6 +34,7 @@ General Backend Architecture
     ```    
 
 4. Start using
+
   ```
   private IRepository<UserEntity> _userRepository;
   public WeatherForecastController(IRepository<UserEntity> userRepository)
@@ -48,8 +50,8 @@ General Backend Architecture
   ```
     
 5.UnitOfWork
+
    ``` 
-   
    public class UnitOfWorkManager : UnitofWorkManagerBase
    {
 
@@ -62,9 +64,10 @@ General Backend Architecture
         }
 
    }
-   
    ```
-6.Dependecy 
+   
+6.Dependecy
+
     ```
     builder.RegisterModule(new EUCoreModule(appSettings));
     builder.RegisterType<UnitOfWorkManager>().As<IUnitOfWorkManager>().As<IRepositoryManager>().InstancePerLifetimeScope();
@@ -73,5 +76,6 @@ General Backend Architecture
         .SetDialect<MySqlDialect>()//SqlServerDialect or MySqlDialect
     ).AutoActivate().AsSelf().SingleInstance();
     ``` 
+    
      
     
