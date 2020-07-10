@@ -18,7 +18,7 @@ Package Manager : Install-Package EUCore
     
 2. You must define the database connection string in AppSettings.json.
 
-```
+```c#
 "DatabaseConfig": {
     "DatabaseType": "dapper",
     "ConnectionString": "CONNECTION_STRING"
