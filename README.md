@@ -27,7 +27,7 @@ Package Manager : Install-Package EUCore
 
 3. Define Entity
 
-```
+```c#
 public class UserEntity : EntityBase<int>
 {
     public string Username { get; set; }
@@ -36,7 +36,7 @@ public class UserEntity : EntityBase<int>
 
 4. Start using
 
-```
+```c#
 private IRepository<UserEntity> _userRepository;
 public WeatherForecastController(IRepository<UserEntity> userRepository)
 {
@@ -52,7 +52,7 @@ public IEnumerable<UserEntity> Get()
     
 5.UnitOfWork
 
-``` 
+```c#
 public class UnitOfWorkManager : UnitofWorkManagerBase
 {
  
@@ -69,7 +69,7 @@ public class UnitOfWorkManager : UnitofWorkManagerBase
    
 6.Dependecy
 
-```
+```c#
 builder.RegisterModule(new EUCoreModule(appSettings));
 builder.RegisterType<UnitOfWorkManager>().As<IUnitOfWorkManager>().As<IRepositoryManager>().InstancePerLifetimeScope();
 builder.Register(c => new RuntimeInitializer()
