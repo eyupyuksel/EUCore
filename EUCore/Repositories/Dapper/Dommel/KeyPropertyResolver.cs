@@ -5,7 +5,7 @@ using Dommel;
 
 namespace EUCore.Repositories.Dapper.Dommel
 {
-    public class KeyPropertyResolver : DommelMapper.IKeyPropertyResolver
+    public class KeyPropertyResolver //: DommelMapper.IKeyPropertyResolver
     {
         public PropertyInfo[] ResolveKeyProperties(Type type)
         {

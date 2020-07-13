@@ -16,10 +16,11 @@ namespace EUCore.Configuration
         public RuntimeInitializer DefaultMapper(Type type)
         {
             DapperExtensions.DapperExtensions.DefaultMapper = type;
-            DommelMapper.SetTableNameResolver(new TableNameResolver());
-            DommelMapper.SetKeyPropertyResolver(new KeyPropertyResolver());
-            DommelMapper.SetColumnNameResolver(new ColumnNameResolver());
+            //DommelMapper.SetTableNameResolver(new TableNameResolver());
+            //DommelMapper.SetKeyPropertyResolver(new KeyPropertyResolver());
+            //DommelMapper.SetColumnNameResolver(new ColumnNameResolver());
             return this;
         }
     }
 }
+//1.50.5
