@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using EUCore.Audit;
 using EUCore.Entity;
+using JetBrains.Annotations;
 
 namespace EUCore.Repositories.Dapper
 {
@@ -22,8 +23,12 @@ namespace EUCore.Repositories.Dapper
         public virtual Task<TEntity> SingleAsync(Expression<Func<TEntity, bool>> predicate) => Task.FromResult(Single(predicate));
 
         public abstract IEnumerable<TEntity> GetAll();
+        //public abstract IEnumerable<TObject> GetAll<TObject>();
+        
         public virtual Task<IEnumerable<TEntity>> GetAllAsync() => Task.FromResult(GetAll());
         public abstract IEnumerable<TEntity> GetAll(Expression<Func<TEntity, bool>> predicate);
+        //public abstract IEnumerable<TObject> GetAll<TObject>(Expression<Func<TEntity, bool>> predicate);
+
         public abstract IEnumerable<TEntity> GetAllByNoFilter(Expression<Func<TEntity, bool>> predicate);
         public virtual Task<IEnumerable<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>> predicate) => Task.FromResult(GetAll(predicate));
 
@@ -57,5 +62,7 @@ namespace EUCore.Repositories.Dapper
 
         public abstract long Count(Expression<Func<TEntity, bool>> predicate);
         public abstract Task<long> CountAsync(Expression<Func<TEntity, bool>> predicate);
+
+        
     }
 }

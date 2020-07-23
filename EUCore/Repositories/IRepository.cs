@@ -88,10 +88,14 @@ namespace EUCore.Repositories
     {
         [NotNull]
         IEnumerable<TEntity> GetAll();
+        //[NotNull]
+        //IEnumerable<TObject> GetAll<TObject>();
         [NotNull]
         Task<IEnumerable<TEntity>> GetAllAsync();
         [NotNull]
         IEnumerable<TEntity> GetAll([NotNull] Expression<Func<TEntity, bool>> predicate);
+        //[NotNull]
+        //IEnumerable<TObject> GetAll<TObject>([NotNull] Expression<Func<TEntity, bool>> predicate);
         [NotNull]
         Task<IEnumerable<TEntity>> GetAllAsync([NotNull] Expression<Func<TEntity, bool>> predicate);
     }

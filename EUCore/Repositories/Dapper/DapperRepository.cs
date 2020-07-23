@@ -57,6 +57,10 @@ namespace EUCore.Repositories.Dapper
         {
             return Connection.Select(default(Expression<Func<TEntity, bool>>).AndDeleteFilter(), Transaction);
         }
+        //public override IEnumerable<TObject> GetAll<TObject>()
+        //{
+        //    return Connection.Select<TEntity,TObject>(default(Expression<Func<TEntity, bool>>).AndDeleteFilter(), Transaction);
+        //}
         public override long Count(Expression<Func<TEntity, bool>> predicate)
         {
             return Connection.Count(predicate.AndDeleteFilter(), Transaction);
@@ -71,6 +75,10 @@ namespace EUCore.Repositories.Dapper
         {
             return Connection.Select(predicate.AndDeleteFilter(), Transaction);
         }
+        //public override IEnumerable<TObject> GetAll<TObject>(Expression<Func<TEntity, bool>> predicate)
+        //{
+        //    return Connection.Select<TEntity,TObject>(predicate.AndDeleteFilter(), Transaction);
+        //}
         public override IEnumerable<TEntity> GetAllByNoFilter(Expression<Func<TEntity, bool>> predicate)
         {
             return Connection.GetAll<TEntity>(Transaction);
@@ -114,5 +122,7 @@ namespace EUCore.Repositories.Dapper
             return primaryKey;
         }
         public override TEntity First(TPrimaryKey id) => FirstOrDefault(id) ?? throw new Exception("EntityNotFoundException");
+
+       
     }
 }

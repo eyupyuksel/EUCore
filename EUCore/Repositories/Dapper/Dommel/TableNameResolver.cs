@@ -3,7 +3,7 @@ using Dommel;
 
 namespace EUCore.Repositories.Dapper.Dommel
 {
-    public class TableNameResolver //: DommelMapper.ITableNameResolver
+    public class TableNameResolver : ITableNameResolver
     {
         public string ResolveTableName(Type type)
         {
