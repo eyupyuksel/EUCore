@@ -11,7 +11,7 @@
     <VersionPrefix>1.0.0</VersionPrefix>
   	<VersionSuffix>alpha</VersionSuffix>
   	<Version>1.0.0-alpha</Version>
-  	<PackageVersion>1.0.4</PackageVersion>
+  	<PackageVersion>1.0.10</PackageVersion>
   	<Copyright>Copyright ® 2020</Copyright>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/eyupyuksel/EUCore.git</RepositoryUrl> 
@@ -36,12 +36,11 @@
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="2020.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="Dapper" Version="1.50.5" />
-    <PackageReference Include="Dapper.SqlBuilder" Version="1.50.5" />
+    <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="Dapper.SqlBuilder" Version="2.0.35" />
     <PackageReference Include="DapperExtensions.DotnetCore" Version="1.0.1" />
-    <PackageReference Include="Dommel" Version="2.0.0-beta4" />
     <PackageReference Include="Autofac" Version="4.8.1" />
-    <PackageReference Include="MongoDB.Driver" Version="2.10.4" />
-    <PackageReference Include="MongoDB.Driver.Core" Version="2.10.4" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+    <PackageReference Include="Dommel" Version="2.0.0" />
   </ItemGroup>
 </Project>

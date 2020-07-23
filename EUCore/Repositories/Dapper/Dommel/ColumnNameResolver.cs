@@ -4,7 +4,7 @@ using Dommel;
 
 namespace EUCore.Repositories.Dapper.Dommel
 {
-    public class ColumnNameResolver : DommelMapper.IColumnNameResolver
+    public class ColumnNameResolver :IColumnNameResolver
     {
         public string ResolveColumnName(PropertyInfo propertyInfo)
         {

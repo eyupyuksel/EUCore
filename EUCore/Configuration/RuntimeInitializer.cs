@@ -23,3 +23,4 @@ namespace EUCore.Configuration
         }
     }
 }
+//1.50.5
